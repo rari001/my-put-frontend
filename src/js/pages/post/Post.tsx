@@ -6,11 +6,13 @@ import { FlashMessage } from "../../components/parts/FlashMessage";
 import { AuthContext } from "../../contexts/AuthContext";
 import { useContext } from "react";
 import { LoginModal } from "../auth/LoginModal";
+import { Login } from "../auth/Login";
 
 export const Post = () => {
   const { flashMessage } = useContext(AuthContext);
   const { currentUser } = useContext(AuthContext);
   const { isLoginModalOpen } = useContext(AuthContext);
+  if (!currentUser) return <Login />
   return (
     <div className="layout">
       <FlashMessage message={flashMessage} />
