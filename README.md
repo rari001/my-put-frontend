@@ -1,20 +1,10 @@
 # TechPut -技術に関する学びを気軽に共有できるサービス-
-![techput-ogp](https://github.com/user-attachments/assets/86160abc-08ec-48f1-b203-9564427b50b6)
-`React` `TypeScript` `Tailwind CSS`
 
 ## 📝 サービス概要
 TechPutは日々学習したことをアウトプットしたい時に気軽に投稿、共有できるサービスです。  
 文字数制限もなく、好きなように投稿できます。
 
-### ★URL
-https://tech-put.com/
-
 ### ★詳細
-**⚫︎Qiita記事（使用方法などまとまっています）**  
-https://qiita.com/kurumi-program/items/3bca0854d4cd81399745 
-
-**⚫︎twitter**  
-https://x.com/kurumi_program/status/1921518493540774358 
 
 **⚫︎バックエンド情報**  
 https://github.com/kurumi-program/tech-put-rails
