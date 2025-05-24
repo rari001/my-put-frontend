@@ -21,7 +21,7 @@ export const Header = () => {
             className="py-3 header-logo btn logo"
             onClick={() => handleNavigate("/")}
           >
-            TechPut
+            MyPut
           </h1>
           <div className="search">
             <i className="search-icon fa-solid fa-magnifying-glass"></i>
