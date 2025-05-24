@@ -30875,7 +30875,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1746626139911
+        // 1747146345970
         var cssReload = __webpack_require__(/*! ../../mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -30910,7 +30910,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1746847581267
+        // 1747229911936
         var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -30945,7 +30945,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1746865349254
+        // 1747229911911
         var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -88068,7 +88068,7 @@ var options = {
     ignoreHeaders: true,
 };
 exports.client = (0, axios_case_converter_1.default)(axios_1.default.create({
-    baseURL: "https://tech-put-rails.onrender.com",
+    baseURL: "http://localhost:3000",
     withCredentials: true,
 }), options);
 
@@ -101987,7 +101987,7 @@ function __rewriteRelativeImportExtension(path, preserveJsx) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("dc311dc45a6615d64584")
+/******/ 		__webpack_require__.h = () => ("320a75f7bf21db65528e")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
