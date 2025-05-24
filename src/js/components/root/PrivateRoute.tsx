@@ -12,7 +12,7 @@ export const PrivateRoute = () => {
 
   if (!isLoggedIn) {
     // ログインしていない場合は、/signin にリダイレクト
-    return <Navigate to="/" />;
+    return <Navigate to="/signin" />;
   }
 
   // ログインしている場合、Outlet（ページの内容）を表示
