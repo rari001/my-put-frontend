@@ -3,7 +3,6 @@ import { FormButton } from "../../components/parts/FormButton";
 import { InputArea } from "../../components/header/InputArea";
 import { AuthForm } from "../../components/layout/AuthForm";
 import { AuthSubTextRight } from "../../components/parts/AuthSubTextRight";
-import { AuthFooterButton } from "../../components/parts/AuthFooterButton";
 import { useLogin } from "../../hooks/auth/useLogin";
 import { useNavigation } from "../../hooks/utils/useNavigation";
 import { Footer } from "../../components/footer/Footer";
@@ -38,7 +37,6 @@ export const Login = () => {
           パスワードをお忘れですか？
         </AuthSubTextRight>
         <FormButton className="login-submit">ログイン</FormButton>
-        <AuthFooterButton onClick={() => handleNavigate("/signup")}>新規会員登録</AuthFooterButton>
       </AuthForm>
       <Footer className="text-center height-50" />
     </>

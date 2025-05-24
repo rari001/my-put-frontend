@@ -2,7 +2,6 @@ import * as React from "react";
 import { Login } from "./pages/auth/Login";
 import { Post } from "./pages/post/Post";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Signup } from "./pages/auth/Signup";
 import { HeaderLayout } from "./components/layout/HeaderLayout";
 import { ForgotPassword } from "./pages/auth/ForgotPassword";
 import { ResetPassword } from "./pages/auth/ResetPassword";
@@ -27,7 +26,6 @@ import { NotFound } from "./pages/post/NotFound";
 import { Terms } from "./pages/legal/Terms";
 import { Privacy } from "./pages/legal/Privacy";
 import { Help } from "./pages/legal/Help";
-import { GuestLogin } from "./pages/auth/GuestLogin";
 
 export const App = () => {
   return (
@@ -39,7 +37,6 @@ export const App = () => {
               <RelationshipProvider>
                 <HeaderLayout />
                 <Routes>
-                  <Route path="/" element={<Post />} />
                   <Route path="*" element={<NotFound />} />
                   <Route path="/terms" element={<Terms />} />
                   <Route path="/privacy" element={<Privacy />} />
@@ -47,6 +44,7 @@ export const App = () => {
 
                   {/* ログインしている場合 */}
                   <Route element={<PrivateRoute />}>
+                    <Route path="/" element={<Post />} />
                     <Route path="/post-detail/:id" element={<PostDetail />} />
                     <Route path="/my-page" element={<Profile />} />
                     <Route path="/users/:id" element={<UserProfileRote />} />
@@ -61,11 +59,11 @@ export const App = () => {
 
                   {/* ログインしていない場合 */}
                   <Route element={<PublicRoute />}>
-                    <Route path="/signup" element={<Signup />} />
+                    {/* <Route path="/signup" element={<Signup />} /> */}
                     <Route path="/signin" element={<Login />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
                     <Route path="/reset-password" element={<ResetPassword />} />
-                    <Route path="/guest-login" element={<GuestLogin />} />
+                    {/* <Route path="/guest-login" element={<GuestLogin />} /> */}
                   </Route>
                 </Routes>
               </RelationshipProvider>
